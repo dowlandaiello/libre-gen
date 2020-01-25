@@ -1,0 +1,18 @@
+[package]
+name = "libre-gen"
+version = "0.1.0"
+authors = ["Dowland Aiello <dowlandaiello@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = { git = "https://github.com/clap-rs/clap" } 
+env_logger = "0.7.1"
+log = "0.4.8"
+
+[lib]
+name = "libre_gen"
+path = "src/lib.rs"
+
+[[bin]]
+name = "genparse"
+path = "src/main.rs"
